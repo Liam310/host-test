@@ -5,7 +5,7 @@ exports.checkCategoryExists = (category_id) => {
     .query(`SELECT * FROM categories WHERE category_id = $1`, [category_id])
     .then(({ rows }) => {
       if (!rows.length) {
-        return Promise.reject({ status: 404, msg: "Not found" });
+        return Promise.reject({ status: 404, msg: "Not fond" });
       }
     });
 };
