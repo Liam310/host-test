@@ -9,3 +9,5 @@ exports.checkCategoryExists = (category_id) => {
       }
     });
 };
+
+console.log("cool");
